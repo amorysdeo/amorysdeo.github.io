@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BEACODE</title>
+        <style>
+            #wb{background-color: whitesmoke;}
+            .center{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            ul{
+                justify-self: center;
+            }
+            li{
+                display: inline;
+            }
+            .nav-item{
+                padding: 20px;
+            }
+            .nav-link{
+                color: black;
+                font-style: normal;
+                text-decoration: none; 
+            }
+            .active{
+                font-weight: 900;
+                background-color: #ffe078;
+                background-size:contain;
+            }
+            a:hover{
+                background-color: rgba(255, 224, 120, 0.5);
+            }
+            #navbar{
+                overflow: hidden;
+            }
+            .sticky {
+                position: sticky;
+                top: 0;
+                width: 100%;
+                background: rgb(0,0,0);
+                background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(9,9,121,0) 60%);
+            }
+            .row{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            body{
+                font-size: 20px;
+            }
+            j{
+                font-size: 3vw;
+            }
+            @font-face {
+                font-family: "Cotoris";
+                src: url(Cotoris.ttf);
+            }
+            m{
+                font-family: Cotoris;
+                font-size: 20px;
+            }
+
+        </style>
+    </head>
+
+    <body id="wb">
+        <div class="container-fluid" style="width: 100%; height: max-content; padding-top: 50px; padding-bottom: 20px;">
+            <img src="logo.png" height="100%" class="center" style="max-height: 100px;">
+        </div>
+        
+        <div class="container-fluid d-flex justify-content-center pt-3" style="width: 100%; font-family: Candara; font-size: 1.7vw;" id="navbar">
+            <ul style="list-style-type: none; display: flex; justify-content: center; padding: 0;">
+                <li class="nav-item"><a href="#" class="nav-link active">Beranda</a></li>
+                <li class="nav-item"><a href="produk.html" class="nav-link">Produk</a></li>
+                <li class="nav-item"><a href="kontak.html" class="nav-link">Kontak</a></li>
+                <li class="nav-item"><a href="tentang.html" class="nav-link">Tentang kami</a></li>
+                <li class="nav-item"><div style="flex: 1;"></div></li>
+                <li class="nav-item">
+                    <a href="troli.html" class="nav-link"> <img src="troli.png" width="100%" style="float: right; max-width: 30px;"> </a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link"> <img src="pentol.png" width="100%" style="float: right; max-width: 30px;"> </a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <hr width="75%" color="#ffe078">
+        </div>
+
+        <div class="container-fluid" style="padding-inline: 8%; padding-top: 2%;">
+            <img src="ap2.jpg" class="center" style="max-width: 1500px;" width="100%">
+
+            <div class="row" style="margin-top: 5%;">
+                <div class="col">
+                    <j style="font-family: Candara; font-weight: 800;">Tampil cantik dan elegan bersama</j><br>
+                    <m style="font-family: Cotoris; font-size: 7vw;">Beacode</m>
+                </div>
+                <div class="col">
+                    <img src="model.jpg" width="100%" style="float: inline-end; max-width: 500px;">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 5%;">
+                <div class="col">
+                    <img src="ap1.jpg" width="100%" style="margin-top: 10px; max-width: 620px;">
+                </div>
+                <div class="col" style="padding-left: 5%;">
+                    <j style="font-family: Candara; font-weight: 800;">Bawa kebahagiaan kemanapun Anda pergi</j>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding-top: 8%;">
+            <hr width="75%" color="#ffe078">
+        </div>
+
+        <div style="padding-bottom: 8%; padding-left: 13%;">
+            <p style="font-family: Candara;">&copy; 2023 &nbsp;&nbsp;&nbsp;&nbsp; Beacode</p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

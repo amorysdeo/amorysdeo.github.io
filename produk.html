@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PRODUK</title>
+        <style>
+            #wb{background-color: whitesmoke;}
+            .center{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            ul{
+                justify-self: center;
+            }
+            li{
+                display: inline;
+            }
+            .nav-item{
+                padding: 20px;
+            }
+            .nav-link{
+                color: black;
+                font-style: normal;
+                text-decoration: none; 
+            }
+            .active{
+                font-weight: 900;
+                background-color: #ffe078;
+                background-size:contain;
+            }
+            a:hover{
+                background-color: rgba(255, 224, 120, 0.5);
+            }
+            #navbar{
+                overflow: hidden;
+            }
+            .sticky {
+                position: sticky;
+                top: 0;
+                width: 100%;
+                background: rgb(0,0,0);
+                background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(9,9,121,0) 60%);
+            }
+            .row{
+                display: flex;
+            }
+            .col{
+                flex: 1;
+                padding: 1.5%;
+            }
+            .ol{
+                outline: 1px solid black;
+                padding-top: 5%;
+                padding-bottom: 5%;
+            }
+            t{
+                font-family: Candara;
+                font-size: 20px;
+            }
+            .button{
+                border: 1px solid #ffe078;
+                background-color: whitesmoke;
+                border-radius: 6px;
+                margin-top: 3%;
+                font-family: Candara;
+                font-size: 1.3vw;
+            }
+            .button:hover{
+                border: 1px solid gray;
+                background-color: #ffe078;
+            }
+            .button2{
+                border: none;
+                background-color: #ffe078;
+                border-radius: 6px;
+                margin-top: 6%;
+                font-family: Candara;
+                font-size: 1.3vw;
+            }
+            .button2:hover{
+                font-weight: 700;
+            }
+            a:active{
+                color: black;
+            }
+        </style>
+    </head>
+    <body id="wb">
+        <div class="container-fluid" style="width: 100%; height: max-content; padding-top: 50px; padding-bottom: 20px;">
+            <img src="logo.png" height="100%" class="center" style="max-height: 100px;">
+        </div>
+        
+        <div class="container-fluid d-flex justify-content-center pt-3" style="width: 100%; font-family: Candara; font-size: 1.7vw;" id="navbar">
+            <ul style="list-style-type: none; display: flex; justify-content: center; padding: 0;">
+                <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active">Produk</a></li>
+                <li class="nav-item"><a href="kontak.html" class="nav-link">Kontak</a></li>
+                <li class="nav-item"><a href="tentang.html" class="nav-link">Tentang kami</a></li>
+                <li class="nav-item"><div style="flex: 1;"></div></li>
+                <li class="nav-item">
+                    <a href="troli.html" class="nav-link"> <img src="troli.png" width="100%" style="float: right; max-width: 30px;"> </a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link"> <img src="pentol.png" width="100%" style="float: right; max-width: 30px;"> </a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <hr width="75%" color="#ffe078">
+        </div>
+
+        <div class="container" style="margin-inline: 5%; margin-top: 2%;">
+            <div class="row">
+                <div class="col order-1">                
+                    <div class="container ol" style="display: grid; place-items: center;">
+                        <img src="c1.jpg" width="90%">
+                        <t style="font-size: 2.5vw; font-weight: 800; font-style: italic;">CINCIN</t>
+                        <t style="font-size: 1.3vw; font-style: italic; color: gray;">ring</t><br><br>
+                        <t style="font: 2vw;">Rp4.499 - Rp8.499</t>
+                        <button class="button2"><a href="troli.html" style="text-decoration: none; color: black;">Beli</a></button>
+                        <button class="button"><a href="cincin.html" style="text-decoration: none; color: black;">Lihat detail >>></a></button>
+                    </div>
+                </div>
+                <div class="col order-2"> 
+                    <div class="container ol" style="display: grid; place-items: center;">
+                        <img src="g3.jpg" width="90%" class="center">
+                        <t style="font-size: 2.5vw; font-weight: 800; font-style: italic;">GELANG</t>
+                        <t style="font-size: 1.3vw; font-style: italic; color: gray;">bracelet</t><br><br>
+                        <t style="font: 2vw;">Rp11.999</t>
+                        <button class="button2"><a href="troli.html" style="text-decoration: none; color: black;">Beli</a></button>
+                        <button class="button"><a href="gelang.html" style="text-decoration: none; color: black;">Lihat detail >>></a></button>
+                    </div>               
+                </div>
+                <div class="col order-3">                
+                    <div class="container ol" style="display: grid; place-items: center;">
+                        <img src="k2.jpg" width="90%" class="center">
+                        <t style="font-size: 2.5vw; font-weight: 800; font-style: italic;">KALUNG</t>
+                        <t style="font-size: 1.3vw; font-style: italic; color: gray;">necklace</t><br><br>
+                        <t style="font: 2vw;">Rp15.199</t>
+                        <button class="button2"><a href="troli.html" style="text-decoration: none; color: black;">Beli</a></button>
+                        <button class="button"><a href="kalung.html" style="text-decoration: none; color: black;">Lihat detail >>></a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding-top: 8%;">
+            <hr width="75%" color="#ffe078">
+        </div>
+
+        <div style="padding-bottom: 8%; padding-left: 13%;">
+            <p style="font-family: Candara;">&copy; 2023 &nbsp;&nbsp;&nbsp;&nbsp; Beacode</p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

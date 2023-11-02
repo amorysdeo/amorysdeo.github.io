@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DETAIL PRODUK</title>
+        <style>
+            #wb{background-color: whitesmoke;}
+            .center{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            ul{
+                justify-self: center;
+            }
+            li{
+                display: inline;
+            }
+            .nav-item{
+                padding: 20px;
+            }
+            .nav-link{
+                color: black;
+                font-style: normal;
+                text-decoration: none; 
+            }
+            .active{
+                font-weight: 900;
+                background-color: #ffe078;
+                background-size:contain;
+            }
+            a:hover{
+                background-color: rgba(255, 224, 120, 0.5);
+            }
+            #navbar{
+                overflow: hidden;
+            }
+            .sticky {
+                position: sticky;
+                top: 0;
+                width: 100%;
+                background: rgb(0,0,0);
+                background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(9,9,121,0) 60%);
+            }
+            .row{
+                display: flex;
+            }
+            .col{
+                flex: 1;
+                padding: 1.5%;
+            }
+            t{
+                font-family: Candara;
+                font-size: 20px;
+            }
+            .button{
+                border: 1px solid #ffe078;
+                background-color: whitesmoke;
+                border-radius: 6px;
+                margin-top: 3%;
+                margin-left: 5%;
+                font-family: Candara;
+                font-size: 1.7vw;
+            }
+            .button:hover{
+                border: 1px solid gray;
+                background-color: #ffe078;
+            }
+            .button2{
+                border: none;
+                background-color: #ffe078;
+                border-radius: 6px;
+                margin-top: 6%;
+                font-family: Candara;
+                font-size: 1.3vw;
+            }
+            .button2:hover{
+                font-weight: 700;
+            }
+        </style>
+    </head>
+    <body id="wb">
+        <div class="container-fluid" style="width: 100%; height: max-content; padding-top: 50px; padding-bottom: 20px;">
+            <img src="logo.png" height="100%" class="center" style="max-height: 100px;">
+        </div>
+        
+        <div class="container-fluid d-flex justify-content-center pt-3" style="width: 100%; font-family: Candara; font-size: 1.7vw;" id="navbar">
+            <ul style="list-style-type: none; display: flex; justify-content: center; padding: 0;">
+                <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
+                <li class="nav-item"><a href="produk.html" class="nav-link">Produk</a></li>
+                <li class="nav-item"><a href="kontak.html" class="nav-link">Kontak</a></li>
+                <li class="nav-item"><a href="tentang.html" class="nav-link">Tentang kami</a></li>
+                <li class="nav-item"><div style="flex: 1;"></div></li>
+                <li class="nav-item">
+                    <a href="troli.html" class="nav-link"> <img src="troli.png" width="100%" style="float: right; max-width: 30px;"> </a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link"> <img src="pentol.png" width="100%" style="float: right; max-width: 30px;"> </a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <hr width="75%" color="#ffe078">
+        </div>
+
+        <div class="container" style="margin-inline: 5%; margin-top: 2%;">
+            <div class="row">
+                <div class="col order-1">                
+                    <img src="g3.jpg" style="max-width: 600px;" width="100%">
+                </div>
+                <div class="col order-2"> 
+                    <t style="font-size: 3vw; font-weight: 500;">Gelang <i>custom</i></t> <br><br><br>
+                    <t style="font-size: 1.7vw; color: rgb(76, 76, 76);">
+                        Saat ini kami hanya memiliki satu model gelang yang dapat Anda pilih.
+                        Ukuran dan kombinasi warna dapat Anda cantumkan saat membeli.
+                    </t> <br><br><br><br>
+                    <t style="font-size: 1.8vw; font-style: italic;">Harga = Rp11.999</t><br><br>
+                    <button class="button2" style="font-size: 1.7vw;"><a href="troli.html" style="text-decoration: none; color: black;">Beli</a></button>
+                    <button class="button"><a href="produk.html" style="text-decoration: none; color: black;">Kembali ke Produk</a></button>
+                </div>               
+            </div>
+        </div>
+
+        <div style="padding-top: 8%;">
+            <hr width="75%" color="#ffe078">
+        </div>
+
+        <div style="padding-bottom: 8%; padding-left: 13%;">
+            <p style="font-family: Candara;">&copy; 2023 &nbsp;&nbsp;&nbsp;&nbsp; Beacode</p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KONTAK</title>
+        <style>
+            #wb{background-color: whitesmoke;}
+            .center{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            ul{
+                justify-self: center;
+            }
+            li{
+                display: inline;
+            }
+            .nav-item{
+                padding: 20px;
+            }
+            .nav-link{
+                color: black;
+                font-style: normal;
+                text-decoration: none; 
+            }
+            .active{
+                font-weight: 900;
+                background-color: #ffe078;
+                background-size:contain;
+            }
+            a:hover{
+                background-color: rgba(255, 224, 120, 0.5);
+            }
+            #navbar{
+                overflow: hidden;
+            }
+            .sticky {
+                position: sticky;
+                top: 0;
+                width: 100%;
+                background: rgb(0,0,0);
+                background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(9,9,121,0) 60%);
+            }
+            .row{
+                display: flex;
+            }
+            .col{
+                flex: 1;
+                padding: 1.5%;
+            }
+            t{
+                font-family: Candara;
+                font-size: 20px;
+            }
+            .tulisan{
+                font-family: Candara;
+                font-size: 20px;
+                font-weight: normal;
+            }
+            .icon{
+                max-width: 55px;
+                width: 100%;
+                margin-top: 10%;
+                margin-bottom: 8%;
+            }
+            .icont{
+                background-color: whitesmoke;
+                display: grid;
+                place-items: center;
+                max-height: max-content;
+                height: 100%;
+                padding-bottom: 10%;
+            }
+            .label{
+                font-size: 1.2vw;
+                color: gray;
+            }
+            .button{
+                border: none;
+                background-color: #ffe078;
+                border-radius: 8px;
+                margin-top: 5%;
+                font-size: 1.3vw;
+            }
+            .button:hover{
+                box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.4);
+            }
+            a:link{
+                text-decoration: none;
+            }
+            a:active{
+                color: black;
+            }
+
+        </style>
+    </head>
+    <body id="wb">
+        <div class="container-fluid" style="width: 100%; height: max-content; padding-top: 50px; padding-bottom: 20px;">
+            <img src="logo.png" height="100%" class="center" style="max-height: 100px;">
+        </div>
+        
+        <div class="container-fluid d-flex justify-content-center pt-3" style="width: 100%; font-family: Candara; font-size: 1.7vw;" id="navbar">
+            <ul style="list-style-type: none; display: flex; justify-content: center; padding: 0;">
+                <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
+                <li class="nav-item"><a href="produk.html" class="nav-link">Produk</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active">Kontak</a></li>
+                <li class="nav-item"><a href="tentang.html" class="nav-link">Tentang kami</a></li>
+                <li class="nav-item"><div style="flex: 1;"></div></li>
+                <li class="nav-item">
+                    <a href="troli.html" class="nav-link"> <img src="troli.png" width="100%" style="float: right; max-width: 30px;"> </a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link"> <img src="pentol.png" width="100%" style="float: right; max-width: 30px;"> </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container-fluid" style="margin-top: 3%; background-color: #ffe078; width: 100%; padding-top: 5%;">
+            <div class="container tulisan align-items-center center" style="background-color: whitesmoke; width: fit-content; padding: 6%; margin-bottom: 4%;">
+                <div class="container" style="max-width: 400px; width: 75%; margin-top: 5%;">
+                    <form>
+                        <label for="Kritik" class="tulisan label">Kritik / Saran</label><br>
+                        <textarea name="Kritik" class="tulisan" style="width: 400px; height: 100px;"></textarea>
+                        <button type="submit" class="tulisan button" style="margin-right: 4%;"><a href="index.html">Kirim</a></button>
+                    </form>
+                 </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="container icont">
+                        <img src="phone.png" class="icon">
+                        <t style="font-size: 2vw; font-weight: 600;">Nomor Telepon</t> <br><br>
+                        <t style="font-size: 1.3vw; text-align: center;">0423 - 385693 (khusus telepon)</t>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="container icont">
+                        <img src="email.png" class="icon">
+                        <t style="font-size: 2vw; font-weight: 600;">Alamat E-mail</t> <br><br>
+                        <t style="font-size: 1.3vw; text-align: center;">beacodeofficial@gmail.com</t>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="container icont">
+                        <img src="wa.png" class="icon">
+                        <t style="font-size: 2vw; font-weight: 600; text-align: center;">Nomor Telepon (Whatsapp)</t> <br><br>
+                        <t style="font-size: 1.3vw; text-align: center;">+62 841-7227-3498 (khusus pesan teks)</t>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="container icont">
+                        <img src="ig.png" class="icon">
+                        <t style="font-size: 2vw; font-weight: 600;">Instagram</t> <br><br>
+                        <t style="font-size: 1.3vw; text-align: center;">@beacode.beads</t>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="container icont">
+                        <img src="web.png" class="icon">
+                        <t style="font-size: 2vw; font-weight: 600;">Website</t> <br><br>
+                        <t style="font-size: 1.3vw; text-align: center;">asdfghjkl</t>
+                    </div>
+                </div>
+                
+            </div>
+            <div style="padding-top: 8%;">
+                <hr width="75%" color="whitesmoke">
+            </div>
+    
+            <div style="padding-bottom: 8%; padding-left: 13%;">
+                <p style="font-family: Candara;">&copy; 2023 &nbsp;&nbsp;&nbsp;&nbsp; Beacode</p>
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
